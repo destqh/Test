@@ -2,7 +2,7 @@ var MongoClient = require('../node_modules/mongodb').MongoClient;
 var url = "mongodb://localhost:27017/mydb";
 
 var lineReader = require('readline').createInterface({
-  input: require('fs').createReadStream('papers-2017-10-30-sample.json')
+  input: require('fs').createReadStream('./database/papers-2017-10-30-sample.json')
 });
 
 var docsCount = 0;
