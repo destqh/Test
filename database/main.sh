@@ -1,6 +1,6 @@
 
 #!/bin/sh
-node drop_docs.js
-node create_docs.js
-node --max-old-space-size=4096 import_docs.js
-node print_docs.js
+node ./database/drop_docs.js
+node ./database/create_docs.js
+node --max-old-space-size=4096 ./database/import_docs.js
+node ./database/print_docs.js
